@@ -155,19 +155,39 @@
                   </div>
                </div>
 
-               <div id="meubotao1" style="z-index:30; align-items: center; width: 100%; max-width: 250px; height: auto; margin: 1409px auto 0; display: none; position: relative;">
-  <a href="https://pay.kiwify.com.br/6vfgaQy" target="_blank" style="display: block; width: 100%; height: 100%;"></a>
-  <img src="images/botao imagem .png" alt="Botão" style="width: 100%; height: auto;">
+               <div id="meubotao1" style="z-index:30; align-items: center; width: 300px; height: 60px; margin-top: 400px; margin-left: 45px; display: none; position: relative;">
+  <a href="https://homemvencedor1.site" target="_blank" style="display: block; width: 100%; height: 100%; position: absolute;"></a>
+  <img src="images/botão imagem .png" style="width: 100%; height: 100%;">
 </div>
 
 <script>
+  // Função para verificar se o dispositivo é um desktop
+  function isDesktop() {
+    return window.innerWidth > 768; // Ajuste conforme necessário
+  }
+
   // Aguarde 5 segundos (5000 milissegundos) antes de exibir a imagem
   setTimeout(function() {
-    // Mostrar a imagem após 5 segundos
-    document.getElementById("meubotao1").style.display = "block";
-  }, 5000);
+    // Verificar se é um dispositivo móvel
+    if (!isDesktop()) {
+      // Mostrar a imagem após 5 segundos se não for um desktop
+      document.getElementById("meubotao1").style.display = "block";
+    }
+  }, 1000);
 </script>
 
+<div id="meubotao2" style="z-index:30; align-items: center; width: 600px; height: 120px; margin-top: 1500px; margin-left: 370px; display: none; position: relative;">
+  <a href="https://homemvencedor1.site" target="_blank" style="display: block; width: 100%; height: 100%; position: absolute;"></a>
+  <img src="images/botão imagem .png" style="width: 100%; height: 100%;">
+</div>
+
+<script>
+  // Aguarde 5 segundos (10000 milissegundos) antes de exibir a imagem
+  setTimeout(function() {
+    // Mostrar a imagem após 5 segundos
+    document.getElementById("meubotao2").style.display = "block";
+  }, 1000);
+</script>
 
 
                <div id="b1wuapomnTAY0cib">
