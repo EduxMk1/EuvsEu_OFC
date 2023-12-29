@@ -543,8 +543,26 @@ window.C_CAPTCHA_KEY = "6Ldk59waAAAAAMPqkICbJjfMivZLCGtTpa6Wn6zO";</script></hea
                                   rotate(0deg);
                               "
                             /></div></div></div></a></div></div></div><script>
-function showImage(){var imageContainer=document.getElementById("RacO3WXozGOtibgF");var delay=465000;setTimeout(function(){imageContainer.style.display = "block";}, delay);}
-window.onload=showImage;</script><div
+                              // Função para mostrar o botão
+                              function mostrarBotao() {
+                                  alert("Botão clicado!");
+                              }
+                          
+                              // Verifica se a hora do temporizador foi armazenada na localStorage
+                              const temporizadorIniciado = localStorage.getItem("temporizadorIniciado");
+                          
+                              if (temporizadorIniciado === null || Date.now() - temporizadorIniciado > 465000) {
+                                  // Se não foi iniciado ou já passaram mais de 7 minutos e 45 segundos, inicia o temporizador
+                                  setTimeout(function() {
+                                      document.getElementById("RacO3WXozGOtibgF").style.display = "block";
+                                      localStorage.setItem("temporizadorIniciado", Date.now());
+                                  }, 465000); // 7 minutos e 45 segundos
+                              } else {
+                                  // Se já foi iniciado, mostra o botão imediatamente
+                                  document.getElementById("RacO3WXozGOtibgF").style.display = "block";
+                              }
+                          </script>
+                          <div
  id="DTUt2scf2PeLy5m2" style="
                   display: grid;
                   position: relative;
